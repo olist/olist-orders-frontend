@@ -1,0 +1,4 @@
+{
+  "welcomeMessage": "Bem vindo ao boilerplate",
+  "{{date, dateTimeFormatAsShort}}": "{{date, dateTimeFormatAsShort}}"
+}

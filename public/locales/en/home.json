@@ -1,0 +1,4 @@
+{
+  "welcomeMessage": "Welcome to the Nextjs Boilerplate",
+  "{{date, dateTimeFormatAsShort}}": "{{date, dateTimeFormatAsShort}}"
+}
