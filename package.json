@@ -1,9 +1,9 @@
 {
-  "name": "nextjs-boilerplate",
+  "name": "olist-orders-frontend",
   "version": "0.0.1",
-  "description": "Boilerplate project for front-end development and starting fast, made with Nextjs and Typescript.",
+  "description": "Olist Orders is the old Tracking, but with many improvements for the buyer.",
   "main": "index.js",
-  "repository": "git@github.com:olist/nextjs-boilerplate.git",
+  "repository": "git@github.com:olist/olist-orders-frontend.git",
   "author": "Olist Developers <developers@olist.com>",
   "license": "MIT",
   "private": true,
