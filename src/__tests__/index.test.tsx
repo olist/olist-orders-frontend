@@ -1,5 +1,5 @@
 import Home from '~/pages/index';
-import { renderWithTheme, screen, waitFor } from '~tests/utils';
+import { renderWithTheme, screen } from '~tests/utils';
 
 describe('HomePage', () => {
   it('should render the title', async () => {

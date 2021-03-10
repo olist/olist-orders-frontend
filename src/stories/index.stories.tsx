@@ -1,7 +1,9 @@
-import Home from './index';
+import { ReactElement } from 'react';
+
+import Home from '~/pages/index';
 
 // eslint-disable-next-line react/prop-types
-export const Example = () => {
+export const Example = (): ReactElement => {
   return <Home />;
 };
 

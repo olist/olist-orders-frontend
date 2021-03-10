@@ -6,7 +6,7 @@ module.exports = {
     locales: ['en', 'pt-BR'],
     defaultLocale: 'pt-BR',
   },
-  webpack(config, options) {
+  webpack(config) {
     config.module.rules.push({
       test: /locales/,
       loader: '@alienfast/i18next-loader',
