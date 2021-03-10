@@ -1,6 +1,8 @@
-# Next.js Boilerplate
+# Olist Orders Frontend
 
-Boilerplate project for front-end development and starting fast, made with Nextjs and Typescript.
+Olist Orders is the old Tracking, but with many improvements for the buyer.
+
+Base Template: [nextjs-template](https://github.com/olist/nextjs-boilerplate)
 
 ##### Installation
 
