@@ -7,7 +7,7 @@ import { UnitedGlobalStyle, theme } from '@olist/united';
 
 import i18n from '../src/common/utils/i18n';
 import queryClient from '../src/common/context/queryClient';
-import GlobalStyle from '../src/common/style/globalStyle';
+import GlobalStyle from './style';
 
 export const decorators = [
   (Story) => (
