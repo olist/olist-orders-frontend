@@ -1,19 +1,19 @@
 import { ReactElement } from 'react';
 
-import CommonLayout from './CommonLayout';
+import Layout from './Layout';
 
 // eslint-disable-next-line react/prop-types
 export const Example = (): ReactElement => {
   return (
-    <CommonLayout>
-      <div>Inside the Layout</div>
-    </CommonLayout>
+    <Layout>
+      <div>Content inside of the layout</div>
+    </Layout>
   );
 };
 
 export default {
-  title: 'Common/Layouts/CommonLayout',
-  component: CommonLayout,
+  title: 'Common/Layouts/Base Layout',
+  component: Layout,
   parameters: {
     backgrounds: {
       default: 'dark',
