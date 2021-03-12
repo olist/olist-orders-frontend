@@ -62,7 +62,7 @@
             "position": "before"
           },
           {
-            "pattern": "@olist/+(united|ui-commons)",
+            "pattern": "@olist/**",
             "group": "external",
             "position": "after"
           }
