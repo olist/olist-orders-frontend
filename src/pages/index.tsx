@@ -1,12 +1,12 @@
 import { ReactElement } from 'react';
 
-import CommonLayout from '~common/layouts/CommonLayout';
+import Layout from '~common/layouts/Layout';
 
 const HomePage = (): ReactElement => {
   return (
-    <CommonLayout>
+    <Layout>
       <div>body</div>
-    </CommonLayout>
+    </Layout>
   );
 };
 
