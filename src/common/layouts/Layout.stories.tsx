@@ -2,7 +2,6 @@ import { ReactElement } from 'react';
 
 import Layout from './Layout';
 
-// eslint-disable-next-line react/prop-types
 export const Example = (): ReactElement => {
   return (
     <Layout>
