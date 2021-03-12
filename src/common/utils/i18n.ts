@@ -1,6 +1,7 @@
-import { i18nextFormatCallback } from '@olist/ui-commons/dist/helpers.cjs.js';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+
+import { i18nextFormatCallback } from '@olist/ui-commons/dist/helpers.cjs.js';
 
 import resources from '../../../public/locales/index.js';
 

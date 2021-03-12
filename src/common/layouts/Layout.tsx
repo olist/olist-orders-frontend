@@ -1,7 +1,8 @@
-import { Layout as UiCommonsLayout } from '@olist/ui-commons/dist/ui-commons.cjs';
 import { themeGet } from '@styled-system/theme-get';
 import { ReactElement } from 'react';
 import styled from 'styled-components';
+
+import { Layout as UiCommonsLayout } from '@olist/ui-commons/dist/ui-commons.cjs';
 
 interface Layout {
   children: JSX.Element[] | JSX.Element;
