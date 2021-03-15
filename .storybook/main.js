@@ -1,3 +1,4 @@
+const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
@@ -17,6 +18,11 @@ module.exports = {
       options: {
         basenameAsNamespace: true,
       },
+    });
+    config.module.rules.push({
+      test: /\.(png|woff|woff2|eot|otf|ttf|svg)$/,
+      loader: 'file-loader',
+      include: path.resolve(__dirname, 'public/fonts')
     });
     config.resolve.plugins = [new TsconfigPathsPlugin()];
     return config;
