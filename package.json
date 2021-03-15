@@ -24,6 +24,7 @@
     "@olist/ui-commons": "^0.15.1",
     "@olist/united": "^0.10.29",
     "@styled-system/theme-get": "^5.1.2",
+    "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "i18next": "^19.9.0",
     "next": "10.0.7",
