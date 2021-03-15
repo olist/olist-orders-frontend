@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 
 import { Button, Input, Flex, Box } from '@olist/united';
 
-import Search from '~/home/classes/Search';
+import Search, { ISearch } from '~/home/classes/Search';
 
 export interface FormProps {
   loading?: boolean;
-  handleSubmit: (string) => void;
+  handleSubmit(parameters: ISearch): void;
 }
 
 const Form = ({ handleSubmit, loading }: FormProps): ReactElement => {
