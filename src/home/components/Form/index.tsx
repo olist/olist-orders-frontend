@@ -1,4 +1,5 @@
 import { ReactElement, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Button, Input, Flex, Box } from '@olist/united';
 
@@ -10,6 +11,7 @@ export interface FormProps {
 }
 
 const Form = ({ handleSubmit, loading }: FormProps): ReactElement => {
+  const { t } = useTranslation('HomeForm');
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => setInputValue(e.target.value);
@@ -28,7 +30,7 @@ const Form = ({ handleSubmit, loading }: FormProps): ReactElement => {
           </Box>
           <Box>
             <Button variation="alternate" loading={loading} type="submit" width={1}>
-              acompanhar
+              {t('search')}
             </Button>
           </Box>
         </Flex>
