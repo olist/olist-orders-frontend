@@ -16,15 +16,17 @@ const App = ({ Component, pageProps, router }): ReactElement => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <QueryClientProvider client={queryClient}>
-        <Hydrate state={pageProps.dehydratedState}>
-          <Component {...pageProps} />
-          <UnitedGlobalStyle />
-          <GlobalStyle />
-        </Hydrate>
-      </QueryClientProvider>
-    </ThemeProvider>
+    <>
+      <UnitedGlobalStyle />
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <QueryClientProvider client={queryClient}>
+          <Hydrate state={pageProps.dehydratedState}>
+            <Component {...pageProps} />
+          </Hydrate>
+        </QueryClientProvider>
+      </ThemeProvider>
+    </>
   );
 };
 
