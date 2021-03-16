@@ -3,6 +3,7 @@
     "next/babel"
   ],
   "plugins": [
+    "babel-plugin-styled-components",
     [
       "i18next-extract",
       {

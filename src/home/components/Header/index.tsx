@@ -6,7 +6,7 @@ import Logo from '~/common/components/Logo';
 
 const Header = (): ReactElement => {
   return (
-    <Flex justifyContent="center" mt={5}>
+    <Flex justifyContent="center" mt={10}>
       <Logo variation="vertical" />
     </Flex>
   );
