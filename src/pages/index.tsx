@@ -17,7 +17,7 @@ const HomePage = (): ReactElement => {
       <Header />
       <Flex mt={10} flexDirection="column" alignItems="center">
         <Box mb={4}>
-          <Text fontSize="19px">{t('homePageDescription')}</Text>
+          <Text.H4>{t('homePageDescription')}</Text.H4>
         </Box>
         <Flex width={1} maxWidth="410px">
           <Form handleSubmit={handleSubmit} />
