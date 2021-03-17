@@ -83,6 +83,8 @@
         "ignoreTemplateLiterals": true
       }
     ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-empty-function": ["warn"],
     "@typescript-eslint/no-unused-vars": ["warn"],
     "no-unused-vars": "off",
