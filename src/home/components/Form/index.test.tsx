@@ -24,7 +24,10 @@ describe('Hom - Form', () => {
 
   it('should render error message', () => {
     renderWithTheme(
-      <Form handleSubmit={handleSubmitMock} errors={[{ type: 'fuzz' }, { type: 'API_ERROR' }]} />
+      <Form
+        handleSubmit={handleSubmitMock}
+        errors={['buzz', `X thing didn't respond the request`]}
+      />
     );
     expect(screen.getByText(ApiErrors.API_ERROR)).toBeInTheDocument();
     expect(screen.getByText(ErrorTest.fuzz)).toBeInTheDocument();

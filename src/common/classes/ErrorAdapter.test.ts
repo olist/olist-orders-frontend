@@ -1,4 +1,4 @@
-import ErrorAdapter from './Error';
+import ErrorAdapter from './ErrorAdapter';
 
 import { ApiErrors, ErrorTest } from '~common/enums/Error';
 
