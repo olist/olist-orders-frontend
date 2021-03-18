@@ -28,11 +28,11 @@ const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
     <Box flexGrow={1}>
       <form onSubmit={handleFormSubmit}>
         <Flex flexDirection="column">
-          <Box mb={3}>
-            <Input value={inputValue} onChange={handleInputChange} />
-            {hasErrors && <FieldError messages={errors} />}
-          </Box>
           <Box>
+            <Input value={inputValue} onChange={handleInputChange} />
+          </Box>
+          <Box mt={2}>{hasErrors && <FieldError messages={errors} />}</Box>
+          <Box mt={3}>
             <Button variation="alternate" loading={loading} type="submit" width={1}>
               {t('search')}
             </Button>
