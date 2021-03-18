@@ -13,6 +13,7 @@ export interface FormProps {
 
 const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
   const { t } = useTranslation('HomeForm');
+
   const [inputValue, setInputValue] = useState('');
 
   const hasErrors = !!errors.length;

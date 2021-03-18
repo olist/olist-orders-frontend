@@ -29,6 +29,7 @@ describe('Hom - Form', () => {
         errors={['buzz', `X thing didn't respond the request`]}
       />
     );
+
     expect(screen.getByText(ApiErrors.API_ERROR)).toBeInTheDocument();
     expect(screen.getByText(ErrorTest.fuzz)).toBeInTheDocument();
   });

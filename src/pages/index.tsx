@@ -11,6 +11,7 @@ import Layout from '~common/layouts/Layout';
 
 const HomePage = (): ReactElement => {
   const { t } = useTranslation('HomePage');
+
   const [currentErrors, setCurrentErrors] = useState([{ type: 'API_ERROR' }]);
 
   const errorMessageList = useMemo(() => {
