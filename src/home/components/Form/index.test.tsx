@@ -2,6 +2,7 @@ import userEvent from '@testing-library/user-event';
 
 import Form from '.';
 
+import { ApiErrors, ErrorTest } from '~common/enums/Error';
 import { renderWithTheme, screen } from '~tests/utils';
 
 describe('Hom - Form', () => {
@@ -19,5 +20,17 @@ describe('Hom - Form', () => {
 
     expect(handleSubmitMock).toBeCalled();
     expect(handleSubmitMock.mock.calls[0][0].value).toBe(value);
+  });
+
+  it('should render error message', () => {
+    renderWithTheme(
+      <Form
+        handleSubmit={handleSubmitMock}
+        errors={['buzz', `X thing didn't respond the request`]}
+      />
+    );
+
+    expect(screen.getByText(ApiErrors.API_ERROR)).toBeInTheDocument();
+    expect(screen.getByText(ErrorTest.fuzz)).toBeInTheDocument();
   });
 });

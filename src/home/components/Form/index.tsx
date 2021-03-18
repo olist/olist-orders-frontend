@@ -1,18 +1,22 @@
 import { ReactElement, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button, Input, Flex, Box } from '@olist/united';
+import { Box, Button, FieldError, Input } from '@olist/united';
 
 import Search, { ISearch } from '~/home/classes/Search';
 
 export interface FormProps {
+  errors?: Array<string>;
   loading?: boolean;
   handleSubmit(parameters: ISearch): void;
 }
 
-const Form = ({ handleSubmit, loading }: FormProps): ReactElement => {
+const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
   const { t } = useTranslation('HomeForm');
+
   const [inputValue, setInputValue] = useState('');
+
+  const hasErrors = !!errors.length;
 
   const handleInputChange = (e) => setInputValue(e.target.value);
 
@@ -24,22 +28,24 @@ const Form = ({ handleSubmit, loading }: FormProps): ReactElement => {
   return (
     <Box flexGrow={1}>
       <form onSubmit={handleFormSubmit}>
-        <Flex flexDirection="column">
-          <Box mb={3}>
+        <Box>
+          <Box>
             <Input value={inputValue} onChange={handleInputChange} />
           </Box>
-          <Box>
+          <Box mt={2}>{hasErrors && <FieldError messages={errors} />}</Box>
+          <Box mt={3}>
             <Button variation="alternate" loading={loading} type="submit" width={1}>
               {t('search')}
             </Button>
           </Box>
-        </Flex>
+        </Box>
       </form>
     </Box>
   );
 };
 
 Form.defaultProps = {
+  errors: [],
   loading: false,
 };
 

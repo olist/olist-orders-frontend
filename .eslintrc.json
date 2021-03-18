@@ -51,6 +51,14 @@
       }
     ],
     "import/prefer-default-export": ["off"],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "allowSeparatedGroups": true
+      }
+    ],
     "import/order": [
       "error",
       {
@@ -83,6 +91,8 @@
         "ignoreTemplateLiterals": true
       }
     ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-empty-function": ["warn"],
     "@typescript-eslint/no-unused-vars": ["warn"],
     "no-unused-vars": "off",
