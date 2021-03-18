@@ -1,7 +1,7 @@
 import { ReactElement, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button, Input, FieldError, Flex, Box } from '@olist/united';
+import { Box, Button, FieldError, Input } from '@olist/united';
 
 import Search, { ISearch } from '~/home/classes/Search';
 
@@ -27,7 +27,7 @@ const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
   return (
     <Box flexGrow={1}>
       <form onSubmit={handleFormSubmit}>
-        <Flex flexDirection="column">
+        <Box>
           <Box>
             <Input value={inputValue} onChange={handleInputChange} />
           </Box>
@@ -37,7 +37,7 @@ const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
               {t('search')}
             </Button>
           </Box>
-        </Flex>
+        </Box>
       </form>
     </Box>
   );

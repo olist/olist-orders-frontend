@@ -51,6 +51,14 @@
       }
     ],
     "import/prefer-default-export": ["off"],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "allowSeparatedGroups": true
+      }
+    ],
     "import/order": [
       "error",
       {

@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import { Flex, Box } from '@olist/united';
+import { Box, Flex } from '@olist/united';
 
 import Logo from './Logo';
 

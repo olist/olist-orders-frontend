@@ -2,9 +2,9 @@ import { ReactElement } from 'react';
 
 import { Flex } from '@olist/united';
 
+import { ApiErrors } from '~/common/enums/Error';
 import Form, { FormProps } from '~/home/components/Form';
 
-// eslint-disable-next-line react/prop-types
 export const WithoutError = (props: FormProps): ReactElement => {
   return (
     <Flex width="500px">
@@ -16,7 +16,7 @@ export const WithoutError = (props: FormProps): ReactElement => {
 export const WithError = (props: FormProps): ReactElement => {
   return (
     <Flex width="500px">
-      <Form {...props} errors={[{ type: 'API_ERROR' }]} />
+      <Form {...props} errors={[ApiErrors.API_ERROR]} />
     </Flex>
   );
 };

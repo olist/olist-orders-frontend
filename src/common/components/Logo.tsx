@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { LogoOlistStore } from '@olist/ui-commons/dist/ui-commons.cjs';
-import { Flex, Box, Text } from '@olist/united';
+import { Box, Flex, Text } from '@olist/united';
 
 interface LogoProps {
   variation?: 'vertical' | 'horizontal';

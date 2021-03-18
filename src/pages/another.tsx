@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 import { ReactElement } from 'react';
 import { QueryClient, useQueryClient } from 'react-query';
-import { dehydrate, DehydratedState } from 'react-query/hydration';
+import { DehydratedState, dehydrate } from 'react-query/hydration';
 
-import { Box, Link as UnitedLink, Flex, Text } from '@olist/united';
+import { Box, Flex, Text, Link as UnitedLink } from '@olist/united';
 
 import ExampleService, { ExampleServiceResponse } from '../common/service/example';
 
