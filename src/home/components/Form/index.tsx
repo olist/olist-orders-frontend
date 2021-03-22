@@ -1,9 +1,10 @@
 import { ReactElement, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Box, Button, FieldError, Input } from '@olist/united';
+import { Box, Button } from '@olist/united';
 
 import Search, { ISearch } from '~/home/classes/Search';
+import InputWithFieldError from '~common/components/InputWithFieldError';
 
 export interface FormProps {
   errors?: Array<string>;
@@ -16,8 +17,6 @@ const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
 
   const [inputValue, setInputValue] = useState('');
 
-  const hasErrors = !!errors.length;
-
   const handleInputChange = (e) => setInputValue(e.target.value);
 
   const handleFormSubmit = (e) => {
@@ -29,14 +28,7 @@ const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
     <Box flexGrow={1}>
       <form onSubmit={handleFormSubmit}>
         <Box>
-          <Box>
-            <Input value={inputValue} onChange={handleInputChange} />
-          </Box>
-          {hasErrors && (
-            <Box mt={2}>
-              <FieldError messages={errors} />
-            </Box>
-          )}
+          <InputWithFieldError errors={errors} value={inputValue} onChange={handleInputChange} />
           <Box mt={3}>
             <Button variation="alternate" loading={loading} type="submit" width={1}>
               {t('search')}
