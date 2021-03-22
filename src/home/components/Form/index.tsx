@@ -32,7 +32,11 @@ const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
           <Box>
             <Input value={inputValue} onChange={handleInputChange} />
           </Box>
-          <Box mt={2}>{hasErrors && <FieldError messages={errors} />}</Box>
+          {hasErrors && (
+            <Box mt={2}>
+              <FieldError messages={errors} />
+            </Box>
+          )}
           <Box mt={3}>
             <Button variation="alternate" loading={loading} type="submit" width={1}>
               {t('search')}

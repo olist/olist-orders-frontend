@@ -1,3 +1,5 @@
+import { AppProps } from 'next/dist/next-server/lib/router/router';
+
 import { ReactElement } from 'react';
 import { QueryClientProvider } from 'react-query';
 import { Hydrate } from 'react-query/hydration';
@@ -9,8 +11,7 @@ import queryClient from '../common/context/queryClient';
 import GlobalStyle from '../common/style/globalStyle';
 import i18n from '../common/utils/i18n';
 
-// eslint-disable-next-line
-const App = ({ Component, pageProps, router }): ReactElement => {
+const App = ({ Component, pageProps, router }: AppProps): ReactElement => {
   if (i18n.language !== router.locale) {
     i18n.changeLanguage(router.locale);
   }
