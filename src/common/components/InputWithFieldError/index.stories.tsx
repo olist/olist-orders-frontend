@@ -25,7 +25,7 @@ export default {
     docs: {
       description: {
         component:
-          'This is and iteration of the United Input with the FieldError and border color already adjusted',
+          'This is an iteration of the United Input with the FieldError and border color already adjusted',
       },
     },
   },
