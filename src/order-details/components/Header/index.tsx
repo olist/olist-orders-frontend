@@ -6,8 +6,8 @@ import Logo from '~/common/components/Logo';
 
 const Header = (): ReactElement => {
   return (
-    <Flex justifyContent="center" mt={8}>
-      <Logo variation="vertical" />
+    <Flex mt={8}>
+      <Logo variation="horizontal" />
     </Flex>
   );
 };
