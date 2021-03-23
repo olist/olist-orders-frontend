@@ -8,6 +8,7 @@ import { theme } from '@olist/united';
 
 import queryClient from '~common/context/queryClient';
 
+// eslint-disable-next-line
 const AllTheProviders = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>

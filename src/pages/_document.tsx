@@ -1,12 +1,10 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 
 import { ReactElement } from 'react';
 import { ServerStyleSheet } from 'styled-components';
 
-// eslint-disable-next-line no-use-before-define
-
 class AppDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
