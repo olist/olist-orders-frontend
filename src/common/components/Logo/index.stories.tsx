@@ -1,6 +1,6 @@
 import { Box, Flex } from '@olist/united';
 
-import Logo from './Logo';
+import Logo from '.';
 
 export const Example = () => {
   return (
