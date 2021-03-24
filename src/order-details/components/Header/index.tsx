@@ -16,7 +16,11 @@ const Header = () => {
   return (
     <Flex mt={8} justifyContent="space-between">
       <Logo variation="horizontal" />
-      <ButtonWithoutBorder icon="search-outline" onClick={handleClick}>
+      <ButtonWithoutBorder
+        icon="search-outline"
+        color="foundation.primaryDefault"
+        onClick={handleClick}
+      >
         {t('headerButtonSearch')}
       </ButtonWithoutBorder>
     </Flex>
