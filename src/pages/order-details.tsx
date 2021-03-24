@@ -1,11 +1,7 @@
-import { ReactElement } from 'react';
-
-import { Box, Flex } from '@olist/united';
-
 import Layout from '~/common/layouts/Layout';
 import Header from '~/order-details/components/Header';
 
-const Details = (): ReactElement => {
+const OrdersDetails = () => {
   return (
     <Layout>
       <Header />
@@ -13,4 +9,4 @@ const Details = (): ReactElement => {
   );
 };
 
-export default Details;
+export default OrdersDetails;
