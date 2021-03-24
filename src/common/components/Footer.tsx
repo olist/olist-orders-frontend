@@ -1,9 +1,8 @@
-import { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Box, Text } from '@olist/united';
 
-const Footer = (): ReactElement => {
+const Footer = () => {
   const { t } = useTranslation('Footer');
   return (
     <Box>

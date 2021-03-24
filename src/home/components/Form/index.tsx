@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Box, Button } from '@olist/united';
@@ -12,7 +12,7 @@ export interface FormProps {
   handleSubmit(parameters: ISearch): void;
 }
 
-const Form = ({ errors, handleSubmit, loading }: FormProps): ReactElement => {
+const Form = ({ errors, handleSubmit, loading }: FormProps) => {
   const { t } = useTranslation('HomeForm');
 
   const [inputValue, setInputValue] = useState('');

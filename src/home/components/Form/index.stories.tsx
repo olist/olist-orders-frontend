@@ -1,11 +1,9 @@
-import { ReactElement } from 'react';
-
 import { Flex } from '@olist/united';
 
 import { ApiErrors } from '~/common/enums/Error';
 import Form, { FormProps } from '~/home/components/Form';
 
-export const WithoutError = (props: FormProps): ReactElement => {
+export const WithoutError = (props: FormProps) => {
   return (
     <Flex width="500px">
       <Form {...props} />
@@ -13,7 +11,7 @@ export const WithoutError = (props: FormProps): ReactElement => {
   );
 };
 
-export const WithError = (props: FormProps): ReactElement => {
+export const WithError = (props: FormProps) => {
   return (
     <Flex width="500px">
       <Form {...props} errors={[ApiErrors.API_ERROR]} />

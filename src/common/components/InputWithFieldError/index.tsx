@@ -20,7 +20,7 @@ export interface InputProps {
   onChange(event: { target: HTMLInputElement }): void;
 }
 
-const InputWithFieldError = ({ errors, ...props }: InputProps): ReactElement => {
+const InputWithFieldError = ({ errors, ...props }: InputProps) => {
   const hasErrors = !!errors.length;
 
   return (

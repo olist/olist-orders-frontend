@@ -1,10 +1,8 @@
-import { ReactElement } from 'react';
-
 import { Flex } from '@olist/united';
 
 import Footer from './Footer';
 
-export const Example = (): ReactElement => {
+export const Example = () => {
   return (
     <Flex width={1} justifyContent="center">
       <Footer />

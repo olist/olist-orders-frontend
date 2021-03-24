@@ -1,10 +1,8 @@
-import { ReactElement } from 'react';
-
 import { Flex } from '@olist/united';
 
 import Logo from '~/common/components/Logo';
 
-const Header = (): ReactElement => {
+const Header = () => {
   return (
     <Flex justifyContent="center" mt={8}>
       <Logo variation="vertical" />

@@ -1,10 +1,8 @@
-import { ReactElement } from 'react';
-
 import { Box, Flex } from '@olist/united';
 
 import Logo from './Logo';
 
-export const Example = (): ReactElement => {
+export const Example = () => {
   return (
     <Flex>
       <Box>
