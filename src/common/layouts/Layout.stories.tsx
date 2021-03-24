@@ -1,8 +1,6 @@
-import { ReactElement } from 'react';
-
 import Layout from './Layout';
 
-export const Example = (): ReactElement => {
+export const Example = () => {
   return (
     <Layout>
       <div>Content inside of the layout</div>

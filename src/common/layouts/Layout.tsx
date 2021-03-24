@@ -1,5 +1,3 @@
-import { ReactElement } from 'react';
-
 import { Flex } from '@olist/united';
 
 import Footer from '~common/components/Footer';
@@ -9,7 +7,7 @@ interface Layout {
   children: JSX.Element[] | JSX.Element;
 }
 
-const Layout = ({ children }: Layout): ReactElement => {
+const Layout = ({ children }: Layout) => {
   return (
     <Container>
       <Flex flexDirection="column" flexGrow={1}>

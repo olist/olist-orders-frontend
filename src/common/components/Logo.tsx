@@ -1,4 +1,3 @@
-import { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { LogoOlistStore } from '@olist/ui-commons/dist/ui-commons.cjs';
@@ -12,7 +11,7 @@ const defaultProps: LogoProps = {
   variation: 'horizontal',
 };
 
-function Logo({ variation }: LogoProps): ReactElement {
+function Logo({ variation }: LogoProps) {
   const { t } = useTranslation('logo');
 
   const vertical = {

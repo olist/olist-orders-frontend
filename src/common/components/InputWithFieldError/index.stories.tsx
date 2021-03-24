@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react';
+import { useState } from 'react';
 
 import InputWithFieldError from './index';
 
@@ -7,7 +7,7 @@ type ExampleProps = {
   value: string;
 };
 
-export const Example = ({ onChange, value }: ExampleProps): ReactElement => {
+export const Example = ({ onChange, value }: ExampleProps) => {
   const [exampleValue, setExampleValue] = useState(value);
   const handleChange = (event: { target: HTMLInputElement }) => {
     const newVal = event.target.value;
