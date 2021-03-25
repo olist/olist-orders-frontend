@@ -1,6 +1,6 @@
 import { Flex } from '@olist/united';
 
-import Footer from '.';
+import Footer from './Footer';
 
 export const Example = () => {
   return (
