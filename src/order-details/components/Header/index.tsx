@@ -4,11 +4,12 @@ import { useTranslation } from 'react-i18next';
 
 import { Flex } from '@olist/united';
 
-import { ButtonWithoutBorder } from '~/common/components/Button/index.styles';
+import { ButtonBorderless } from '~/common/components/Button/index.styles';
 import Logo from '~/common/components/Logo';
 
 const Header = () => {
   const { t } = useTranslation('orderDetailsHeader');
+
   const router = useRouter();
 
   const handleClick = () => router.push('/');
@@ -16,13 +17,13 @@ const Header = () => {
   return (
     <Flex mt={8} justifyContent="space-between">
       <Logo variation="horizontal" />
-      <ButtonWithoutBorder
+      <ButtonBorderless
         icon="search-outline"
         color="foundation.primaryDefault"
         onClick={handleClick}
       >
         {t('headerButtonSearch')}
-      </ButtonWithoutBorder>
+      </ButtonBorderless>
     </Flex>
   );
 };

@@ -1,10 +1,10 @@
-import { ButtonWithoutBorder } from './index.styles';
+import { ButtonBorderless } from './index.styles';
 
 export const Example = () => {
-  return <ButtonWithoutBorder>nova pesquisa</ButtonWithoutBorder>;
+  return <ButtonBorderless>nova pesquisa</ButtonBorderless>;
 };
 
-Example.storyName = 'ButtonWithoutBorder';
+Example.storyName = 'ButtonBorderless';
 
 export default {
   title: 'Common/Components/Button',
