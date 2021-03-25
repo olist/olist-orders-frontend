@@ -1,0 +1,4 @@
+{
+  "translatedEstimatedToFinalDate": "arriving between {{dateOne, dateTimeFormatAsShort}} and {{dateTwo, dateTimeFormatAsShort}}",
+  "{{date, dateTimeFormatAsShort}}": "{{date, dateTimeFormatAsShort}}"
+}
