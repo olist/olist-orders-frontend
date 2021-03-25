@@ -1,5 +1,4 @@
 import { themeGet } from '@styled-system/theme-get';
-import { ReactElement } from 'react';
 import styled, { css } from 'styled-components';
 
 import { Box, FieldError, Input as UnitedInput } from '@olist/united';
