@@ -22,7 +22,7 @@ export default function OrderInfo({
   const translatedCreatedAt = t('{{date, dateTimeFormatAsShort}}', {
     date: new Date(createdAt),
   });
-  /* arriving between {{dateOne, dateTimeFormatAsShort}} and {{dateTwo, dateTimeFormatAsShort}} */
+
   const translatedEstimatedToFinalDate = t('translatedEstimatedToFinalDate', {
     dateOne: new Date(estimatedDeliveryAt),
     dateTwo: new Date(finalDeliveryAt),
@@ -34,7 +34,7 @@ export default function OrderInfo({
         {channel} {orderId}
       </Text.H3>
       <Text>{translatedCreatedAt}</Text>
-      <Text>{translatedEstimatedToFinalDate}</Text>
+      <Text color="foundation.shadeDark">{translatedEstimatedToFinalDate}</Text>
     </Box>
   );
 }
