@@ -8,14 +8,12 @@ export default function Helpbox() {
   const { t } = useTranslation('orderDetailHelpbox');
 
   return (
-    <Card>
+    <Card minWidth="410px">
       <Box>
-        {/* <Text.H4 fontWeight="bold">Problemas com o pedido?</Text.H4> */}
         <Text.H4 fontWeight="bold">{t('title')}</Text.H4>
       </Box>
-      <Box>
-        {/* <Text>Fale conosco clicando no botão abaixo:</Text> */}
-        <Text>{t('description')}</Text>
+      <Box mt={1}>
+        <Text fontSize={1}>{t('description')}</Text>
       </Box>
       <Box mt={4}>
         <ButtonRounded icon="question-circle-outline" variation="alternate">
