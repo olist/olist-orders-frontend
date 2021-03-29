@@ -26,9 +26,14 @@ const Form = ({ errors, handleSubmit, loading }: FormProps) => {
 
   return (
     <Box flexGrow={1}>
-      <form onSubmit={handleFormSubmit}>
+      <form action="post" onSubmit={handleFormSubmit}>
         <Box>
-          <InputWithFieldError errors={errors} value={inputValue} onChange={handleInputChange} />
+          <InputWithFieldError
+            aria-label={t('inputAreaLabel')}
+            errors={errors}
+            value={inputValue}
+            onChange={handleInputChange}
+          />
           <Box mt={3}>
             <Button variation="alternate" loading={loading} type="submit" width={1}>
               {t('search')}

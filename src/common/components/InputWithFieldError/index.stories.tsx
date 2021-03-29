@@ -15,7 +15,12 @@ export const Example = ({ onChange, value }: ExampleProps) => {
     setExampleValue(newVal);
   };
   return (
-    <InputWithFieldError errors={['Error here']} value={exampleValue} onChange={handleChange} />
+    <InputWithFieldError
+      aria-label="Test input"
+      errors={['Error here']}
+      value={exampleValue}
+      onChange={handleChange}
+    />
   );
 };
 
