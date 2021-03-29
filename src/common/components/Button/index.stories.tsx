@@ -1,10 +1,16 @@
-import { ButtonBorderless } from './index.styles';
+import { ButtonBorderless, ButtonRounded } from './index.styles';
 
-export const Example = () => {
+export const Borderless = () => {
   return <ButtonBorderless>nova pesquisa</ButtonBorderless>;
 };
 
-Example.storyName = 'ButtonBorderless';
+Borderless.storyName = 'ButtonBorderless';
+
+export const Rounded = () => {
+  return <ButtonRounded variation="alternate">nova pesquisa</ButtonRounded>;
+};
+
+Rounded.storyName = 'ButtonRounded';
 
 export default {
   title: 'Common/Components/Button',
