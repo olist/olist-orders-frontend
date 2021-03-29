@@ -13,7 +13,7 @@ const Layout = ({ children }: Layout) => {
       <Flex flexDirection="column" flexGrow={1}>
         {children}
       </Flex>
-      <Flex width={1} justifyContent="center">
+      <Flex justifyContent="center">
         <Footer />
       </Flex>
     </Container>
